@@ -1,0 +1,53 @@
+  #modal.modal-overlay {
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  }
+
+  #modal .modal-window {
+  	background: white;
+  	border-radius: 10px;
+  	border: 1px solid gold;
+  	width: 400px;
+  	height: 300px;
+  	position: relative;
+  	top: -100px;
+  	padding: 10px;
+  }
+
+  #modal .title {
+  	padding-left: 10px;
+  	display: inline;
+  	color: gold;
+
+  }
+
+  #modal .title h2 {
+  	display: inline;
+  }
+
+  #modal .close-area {
+  	display: inline;
+  	float: right;
+  	padding-right: 10px;
+  	cursor: pointer;
+  }
+
+  #modal .content {
+  	margin-top: 20px;
+  	padding: 0px 10px;
+  }
+  .addEmoji{
+	  cursor: pointer;
+	  font-size: 20px;
+	  margin: 10px;
+  }
+  .addEmoji:hover{
+	  background-color: #eee;
+  }

@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+.container h1 {
+	text-align: left;
+	padding: 5px 5px 5px 15px;
+	color: #FFBB00;
+	border-left: 3px solid #FFBB00;
+	margin-bottom: 20px;
+}
+
+.container p {
+	margin: 5px;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0px 10px 7px 10px;
+	background-color: #eee;
+	font-size: 20px;
+}
+
+.chatting {
+	width: 600px;
+	height: 1000px;
+}
+
+.myChat {
+	text-align: right;
+}
+
+.myChat>p {
+	background-color: gold;
+}
+
+.display-chatting {
+	width: 100%;
+	height: 1000px;
+	border: 1px solid gold;
+	overflow: auto;
+	/*스크롤 처럼*/
+	list-style: none;
+	margin: auto;
+	background-image: url('../image/choonsik.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	/* 인터넷 익스플로러 */
+	scrollbar-width: none;
+	/* 파이어폭스 */
+}
+
+.others {
+	font-weight: 700;
+	padding-left: 9px;
+}
+
+button:enabled:hover {
+	background-color: gold;
+	color: black;
+}
+
+input {
+	padding: 5px;
+	width: 500px;
+	height: 37px;
+	font-size: 20px;
+}
+
+button {
+	padding: 9px;
+	width: fit-content;
+	border: none;
+	border-radius: 5px;
+	background-color: #eee;
+	color: darkgray;
+	font-size: 16px;
+}
+
+#yourMsg {
+	display: none;
+}
+
+.msgImg {
+	width: 240px;
+	height: 200px;
+	padding: 5px;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.inputTable {
+	margin-top: 10px;
+}
+
+.inputTable tr:nth-child(2) td:nth-child(1) {
+	padding-left: 20px;
+}
+
+table {
+	width: 600px;
+	height: 113px;
+}
+
+.img {
+	float: right;
+}
+
+#yourMsg img {
+	width: 40px;
+	height: 40px;
+}
+
+.display-chatting::-webkit-scrollbar {
+	display: none;
+	/* 크롬, 사파리, 오페라, 엣지 */
+}

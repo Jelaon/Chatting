@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/chat.css">
+	<meta charset="UTF-8">
+	<title>Chatting</title>
+	<head th:replace="emojiModal.html :: head"></head>
+</head>
+
+<body>
+	
+	<div class="wrap">
+		<div id="container" class="container">
+			<h1>채팅방</h1>
+			<input type="hidden" id="sessionId" value="">
+
+			<div id="chatting" class="chatting">
+				<ul class="display-chatting">
+				</ul>
+			</div>
+
+			<div id="yourName">
+				<table>
+					<tr>
+						<th><input type="text" name="userName" id="userName" placeholder="enter your nickname here...">
+						</th>
+						<th><button onclick="chatName()" id="startBtn">확인</button></th>
+					</tr>
+				</table>
+			</div>
+			<div id="yourMsg">
+				<table class="inputTable">
+					<tr>
+						<th><input id="message"></th>
+						<td><button onclick="send()" id="sendBtn">전송</button></td>
+					</tr>
+					<tr>
+						<td><img id="fileImg" src="../image/clip.png">
+						<img id="emojiImg" src="../image/happy.png">
+						<input type="file" id="fileUpload"
+								style="display: none;"></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div th:insert="~{/emojiModal :: modalFragment}"></div>
+	<script src="./js/chat.js"></script>
+</body>
+
+</html>

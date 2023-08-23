@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/emojiModal.css">
+	<meta charset="UTF-8">
+	<title>Modal</title>
+</head>
+<body>
+	<emojiModal th:fragment="modalFragment">
+	<div id="container">
+	</div>
+	<div id="modal" class="modal-overlay">
+		<div class="modal-window">
+			<div class="title">
+				<h2>이모티콘</h2>
+			</div>
+			<div class="close-area">X</div>
+			<div class="content">
+			</div>
+		</div>
+	</div>
+	<script src="./js/emojiModal.js"></script>
+	</emojiModal>
+</body>
+</html>
